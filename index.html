@@ -6,200 +6,325 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-inverse">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Gallery</a> </li>
-                        <li><a href="#" >Contact Us</a></li>
-                    </ul>
-                </div>
-          </nav>
-    </div>
-</div>
- <div class="container">
-    <div class="row">
-            <div class="content">
-                <div class="content-three">
-			<p>This is test</p>
-                    <h2 class="text-center text-success">Tech Fest</h2>
+
+<!-- this is our header -->
+
+<div class="header">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navbar pull-right">
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Gallery</a> </li>
+                                <li><a href="#" >Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
+            <canvas id="header-canvas"></canvas>
+            <h1 class="main-title"><span class="thin">ThinkFest</span> Techathon</h1>
+        </div>
     </div>
+</div>
+
+<!-- End of header -->
+
 
     <!--Start About -->
 
     <div class="row">
-        <div class="about">
+        <div id="aboutID">
+        <div class="aboutL animated">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="gallery-title">About Tech Fest</h1>
             </div>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ligula velit, vehicula non venenatis vel, cursus at risus. Sed cursus ante eu feugiat efficitur. Donec tincidunt diam at enim cursus tempor. Sed arcu nisi, volutpat sed tristique a, dictum eu nulla. Aenean nec turpis lacus. Vestibulum sagittis ipsum orci, sed convallis mauris tincidunt at. Nunc rutrum consequat tristique. Integer vitae semper mauris, et auctor lectus. Etiam ac odio lectus. Nulla scelerisque tellus ut eros cursus interdum. Maecenas in metus a lectus malesuada convallis. Aliquam at tristique nulla. </p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum ligula velit, vehicula non venenatis vel, cursus at risus. Sed cursus ante eu
+                feugiat efficitur. Donec tincidunt diam at enim cursus tempor. Sed arcu nisi,
+                volutpat sed tristique a, dictum eu nulla. Aenean nec turpis lacus. Vestibulum sagittis
+                ipsum orci, sed convallis mauris tincidunt at. Nunc rutrum consequat tristique.
+                Integer vitae semper mauris, et auctor lectus. Etiam ac odio lectus.
+                Nulla scelerisque tellus ut eros cursus interdum. Maecenas in metus a
+                lectus malesuada convallis. Aliquam at tristique nulla. </p>
+        </div>
         </div>
     </div>
 
     <!-- End About -->
 
+
+     <!--Lectures and speakers-->
+
+
+     <div class="row">
+         <div id="LecturesID">
+         <div class="LecturesC animated">
+
+         </div>
+         </div>
+     </div>
+
+     <!--Ends Lectures and speakers-->
+
+
     <!--Start Event -->
 
     <div class="row">
+        <div id="eventID">
+        <div class="eventC animated">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1 class="gallery-title">Events</h1>
         </div>
-          <div class="row">
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
                   <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
+                      <img class="port-image" src="image/thumb_nail/robotwars-hero-banner-312.jpg"/>
                       <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
+                          <h3 class="text-capitalize">Robowar</h3>
+                          <p>Passionate About Bots</p>
                       </div>
                       <div class="cap2">
-                          <p class="text-center">Register</p>
-                      </div>
-
-                  </div>
-
-              </div>
-
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                  <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
-                      <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
-                      </div>
-                      <div class="cap2">
-                          <p class="text-center">Register</p>
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
                       </div>
                   </div>
               </div>
 
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
                   <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
+                      <img class="port-image" src="image/thumb_nail/technical%20quiz123.jpg"/>
                       <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
+                          <h3 class="text-capitalize">buzzit</h3>
+                          <p>Technical Quiz Compition</p>
                       </div>
                       <div class="cap2">
-                          <p class="text-center">Register</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-        <div class="row">
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                  <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
-                      <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
-                      </div>
-                      <div class="cap2">
-                          <p class="text-center">Register</p>
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
                       </div>
                   </div>
               </div>
 
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
                   <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
+                      <img class="port-image" src="image/thumb_nail/reverse%20coding12.jpg"/>
                       <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
+                          <h3 class="text-capitalize">Rev code</h3>
+                          <p>Reverse Coding in comfortable language</p>
                       </div>
                       <div class="cap2">
-                          <p class="text-center">Register</p>
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="each-item">
+                      <img class="port-image" src="image/thumb_nail/web113.jpg"/>
+                      <div class="cap1">
+                          <h3 class="text-capitalize">desinova</h3>
+                          <p>Web Development</p>
+                      </div>
+                      <div class="cap2">
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
                       </div>
                   </div>
               </div>
 
-              <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
                   <div class="each-item">
-                      <img class="port-image" src="image/girl.jpeg"/>
+                      <img class="port-image" src="image/thumb_nail/andrioi12.jpg"/>
                       <div class="cap1">
-                          <h3>Event Type</h3>
-                          <p>Some basic description about event</p>
+                          <h3 class="text-capitalize">ANDRIO</h3>
+                          <p>Android Development</p>
                       </div>
                       <div class="cap2">
-                          <p class="text-center">Register</p>
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
                       </div>
                   </div>
               </div>
+              <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="each-item">
+                      <img class="port-image" src="image/thumb_nail/debbugging12.jpg"/>
+                      <div class="cap1">
+                          <h3 class="text-capitalize">TECH MARATHON</h3>
+                          <p>Code Debugging</p>
+                      </div>
+                      <div class="cap2">
+                          <div class="form-actions">
+                              <button type="submit" class="btn">Details</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="each-item">
+                    <img class="port-image" src="image/thumb_nail/poster%20presentation123.jpeg"/>
+                    <div class="cap1">
+                        <h3 class="text-capitalize">project presentation</h3>
+                        <p>Present Your Project in Poster</p>
+                    </div>
+                    <div class="cap2">
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="each-item">
+                    <img class="port-image" src="image/thumb_nail/mock%20placement144.jpg"/>
+                    <div class="cap1">
+                        <h3 class="text-capitalize">MOCK PLACEMENT</h3>
+                        <p>Test Your Skill</p>
+                    </div>
+                    <div class="cap2">
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="each-item">
+                    <img class="port-image" src="image/thumb_nail/surprise%20event%20-%20Copy23.jpg"/>
+                    <div class="cap1">
+                        <h3 class="text-capitalize">SURPRISE EVENT</h3>
+                        <p>Test Your Skill on Spot</p>
+                    </div>
+                    <div class="cap2">
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
+       </div>
 
     <!-- End Event -->
 
     <!-- start image Gallery -->
 
-    <div class="row">
-        <div class="galary-window">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 class="gallery-title">Gallery</h1>
-            </div>
+         <div class="row">
+             <div id="imageGallery">
+             <div class="galary-window">
+                 <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <h1 class="animated fadeInLeft gallery-title">Gallery</h1>
+                 </div>
 
-            <div align="center">
-                <button class="btn btn-default filter-button" data-filter="all">All</button>
-                <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-                <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-                <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-                <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
-            </div>
-            <br/>
+                 <div align="center" class="animated fadeInRight">
+                     <button class="btn btn-default filter-button" data-filter="all">All</button>
+                     <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+                     <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+                     <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+                     <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+                 </div>
+                 <br/>
+                 <div class="fil animated">
+                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
+                         <div class="image_container">
+                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                         <div class="overlay">
+                             <div class="text">about image</div>
+                         </div>
+                         </div>
+                     </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
+                         <div class="image_container">
+                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <div class="overlay">
+                                 <div class="text">about image</div>
+                             </div>
+                         </div>
+                     </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
+                         <div class="image_container">
+                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <div class="overlay">
+                                 <div class="text">about image</div>
+                             </div>
+                         </div>
+                     </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                         <div class="image_container">
+                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <div class="overlay">
+                                 <div class="text">about image</div>
+                             </div>
+                         </div>
+                     </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
+                         <div class="image_container">
+                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <div class="overlay">
+                                 <div class="text">about image</div>
+                             </div>
+                         </div>
+                     </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                 </div>
+                <div class="fir animated">
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">about image</div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">about image</div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">about image</div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="image/girl.jpeg" class="img-responsive">
-            </div>
-        </div>
-    </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">about image</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             </div>
+         </div>
 
    <!-- End image gallery -->
 
@@ -210,6 +335,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="gallery-title">Contact</h1>
             </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 form-fill">
             <form method="post" action="">
                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                     <input class="form-control" type="text" name="name" value placeholder="Your Name" required>
@@ -227,6 +353,7 @@
                     <button type="submit" class="btn btn-success">SEND MESSAGE</button>
                 </div>
             </form>
+            </div>
         </div>
     </div>
 
@@ -237,6 +364,11 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/noframework.waypoints.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/effects.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
