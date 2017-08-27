@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +8,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- this is our header -->
 
@@ -19,14 +17,14 @@
         <div id="large-header" class="large-header">
             <div class="container-fluid">
                 <div class="row">
-                    <nav class="navbar pull-right">
+                    <nav class="navbar pull-right navbar-fixed-top">
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Event</a></li>
-                                <li><a href="#">Gallery</a> </li>
-                                <li><a href="#" >Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#aboutID">About</a></li>
+                                <li><a href="#eventID">Event</a></li>
+                                <li><a href="#imageGallery">Gallery</a> </li>
+                                <li><a href="#section5" >Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -42,21 +40,18 @@
 
 
     <!--Start About -->
-
-    <div class="row">
+<div class="container">
+    <div class="row" id="section1">
         <div id="aboutID">
         <div class="aboutL animated">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 class="gallery-title">About Tech Fest</h1>
+                <h1 class="gallery-title">About</h1>
             </div>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum ligula velit, vehicula non venenatis vel, cursus at risus. Sed cursus ante eu
-                feugiat efficitur. Donec tincidunt diam at enim cursus tempor. Sed arcu nisi,
-                volutpat sed tristique a, dictum eu nulla. Aenean nec turpis lacus. Vestibulum sagittis
-                ipsum orci, sed convallis mauris tincidunt at. Nunc rutrum consequat tristique.
-                Integer vitae semper mauris, et auctor lectus. Etiam ac odio lectus.
-                Nulla scelerisque tellus ut eros cursus interdum. Maecenas in metus a
-                lectus malesuada convallis. Aliquam at tristique nulla. </p>
+            <h3><b>Who we are?</b></h3>
+            <p class="text-justify">Started in 2016 with the motive of encouraging technology,scentific thinking and innovation, <b>Tech Fest</b> is now organised as Asia's Largest science and Technology festival with a footfall of more than 1,60,000 annually and a reach of over 2500+ Indian colleges over 500+ colleges abroad. </p>
+
+            <h3><b>How is Tech Fest built?</b></h3>
+            <p class="text-justify">Complete conceptualisation and execution of <b>Tech Fest</b> is done by students.</p>
         </div>
         </div>
     </div>
@@ -67,20 +62,64 @@
      <!--Lectures and speakers-->
 
 
-     <div class="row">
-         <div id="LecturesID">
-         <div class="LecturesC animated">
+<div class="row">
+        <div id="LecturesID">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">CONFERENCE AND INVITATION</h1>
+            </div>
+            <div class="LecturesCL animated">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h2>INTERNATIONAL CONFERENCE</h2>
+                    <p><b>Tech Fest</b> will be start with an international conference where various projets will be shown by huge number of scientists.</p>
+                       <h2>Topics of international conference is:</h2>
+                    <ul>
+                    <li><b>Artificial Intelligence</b></li>
+                <ul>
+                <li>Date:12-12-2017</li>
+                <li>Time:10:00-12:00 AM</li>
 
-         </div>
-         </div>
-     </div>
+                <button id="regster" type="submit" class="butn">REGISTER</button>
+               </ul>
 
-     <!--Ends Lectures and speakers-->
+                        <li><b>Internate Of Things</b></li>
+                        <ul>
+                            <li>Date:12-12-2017</li>
+                            <li>Time:01:00-04:00 PM</li>
+                             <button id="register" type="submit" class="butn">REGISTER</button>
+                        </ul>
+                    </ul>
+             </div>
+            </div>
+            <div class="LecturesCR animated">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h2>INVITATION</h2>
+                    <p>Technology refers to do the practical application of scientific Knowledge and also includes the capability and skills required to apply the Knowledge. <b>Tech Fest</b> presents a series of innovation challenges intended to deepen the understanding of advance solutions in the areas of Science and Technology. We invite you to melt your brains and think hard to aim for extremely and mind bending competitions of this edition.</p>
+                    <ul>
+                        <li>Venue:</li>
+                        <ul><li><b>International Institute Of Information Technology,Pune</b></li>
+                        </ul>
+                        <li>Date:</li>
+                        <ul>
+                            <li> <b>12-12-2017  to 18-12-2017</b></li>
+
+
+                        </ul>
+                    </ul>
+            </div>
+        </div>
+   </div>
+</div>
+
+<!--Ends Lectures and speakers-->
+
+
+
+<!--Ends Lectures and speakers-->
 
 
     <!--Start Event -->
 
-    <div class="row">
+    <div class="row" id="section3">
         <div id="eventID">
         <div class="eventC animated">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -94,9 +133,9 @@
                           <p>Passionate About Bots</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form action="robowar.html" class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -109,9 +148,9 @@
                           <p>Technical Quiz Compition</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form action="buzzit.html" class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -124,11 +163,11 @@
                           <p>Reverse Coding in comfortable language</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
-                      </div>
+                        </form>
                   </div>
+                </div>
               </div>
               <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12">
                   <div class="each-item">
@@ -138,9 +177,9 @@
                           <p>Web Development</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form action="desnova.html" class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -153,9 +192,9 @@
                           <p>Android Development</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form action="Androi.html" class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -167,9 +206,9 @@
                           <p>Code Debugging</p>
                       </div>
                       <div class="cap2">
-                          <div class="form-actions">
+                          <form action="Tech_marathon.html" class="form-actions">
                               <button type="submit" class="btn">Details</button>
-                          </div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -181,9 +220,9 @@
                         <p>Present Your Project in Poster</p>
                     </div>
                     <div class="cap2">
-                        <div class="form-actions">
+                        <form action="poster.html" class="form-actions">
                             <button type="submit" class="btn">Details</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -195,9 +234,9 @@
                         <p>Test Your Skill</p>
                     </div>
                     <div class="cap2">
-                        <div class="form-actions">
+                        <form action="Mock_place.html" class="form-actions">
                             <button type="submit" class="btn">Details</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -209,9 +248,9 @@
                         <p>Test Your Skill on Spot</p>
                     </div>
                     <div class="cap2">
-                        <div class="form-actions">
+                        <form action="surprise.html" class="form-actions">
                             <button type="submit" class="btn">Details</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -223,7 +262,7 @@
 
     <!-- start image Gallery -->
 
-         <div class="row">
+         <div class="row" id="section4">
              <div id="imageGallery">
              <div class="galary-window">
                  <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -232,54 +271,54 @@
 
                  <div align="center" class="animated fadeInRight">
                      <button class="btn btn-default filter-button" data-filter="all">All</button>
-                     <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-                     <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-                     <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-                     <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+                     <button class="btn btn-default filter-button" data-filter="hdpe">Placement</button>
+                     <button class="btn btn-default filter-button" data-filter="sprinkle">Desinova</button>
+                     <button class="btn btn-default filter-button" data-filter="spray">Andrio</button>
+                     <button class="btn btn-default filter-button" data-filter="irrigation">Robowar</button>
                  </div>
                  <br/>
                  <div class="fil animated">
                      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
                          <div class="image_container">
-                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <a href="#"> <img src="image/thumb_nail/IMG_5986n.jpg" class="img-responsive image"></a>
                          <div class="overlay">
-                             <div class="text">about image</div>
+                             <div class="text">placed in IBM</div>
                          </div>
                          </div>
                      </div>
 
                      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter sprinkle">
                          <div class="image_container">
-                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <a href="#"> <img src="image/images/IMG_5988.JPG" class="img-responsive image"></a>
                              <div class="overlay">
-                                 <div class="text">about image</div>
+                                 <div class="text">Core committee of TechFest</div>
                              </div>
                          </div>
                      </div>
 
                      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter hdpe">
                          <div class="image_container">
-                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <a href="#"> <img src="image/images/IMG_5997.JPG" class="img-responsive image"></a>
                              <div class="overlay">
-                                 <div class="text">about image</div>
+                                 <div class="text">Technical Committee of TechFest</div>
                              </div>
                          </div>
                      </div>
 
                      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
                          <div class="image_container">
-                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <a href="#"> <img src="image/images/IMG_5998.JPG" class="img-responsive image"></a>
                              <div class="overlay">
-                                 <div class="text">about image</div>
+                                 <div class="text">Management Committee of TechFest</div>
                              </div>
                          </div>
                      </div>
 
                      <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
                          <div class="image_container">
-                             <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                             <a href="#"> <img src="image/images/IMG_6007.JPG" class="img-responsive image"></a>
                              <div class="overlay">
-                                 <div class="text">about image</div>
+                                 <div class="text">Cultural  Committee of TechFest</div>
                              </div>
                          </div>
                      </div>
@@ -288,36 +327,60 @@
                 <div class="fir animated">
                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
                         <div class="image_container">
-                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <a href="#"> <img src="image/images/IMG_6018.JPG" class="img-responsive image"></a>
                             <div class="overlay">
-                                <div class="text">about image</div>
+                                <div class="text">Sponsership</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter spray">
                         <div class="image_container">
-                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <a href="#"> <img src="image/images/IMG_6032.JPG" class="img-responsive image"></a>
                             <div class="overlay">
-                                <div class="text">about image</div>
+                                <div class="text">TechHydro</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
                         <div class="image_container">
-                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <a href="#"> <img src="image/images/IMG_6061.JPG" class="img-responsive image"></a>
                             <div class="overlay">
-                                <div class="text">about image</div>
+                                <div class="text">Treasure</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
                         <div class="image_container">
-                            <a href="#"> <img src="image/girl.jpeg" class="img-responsive image"></a>
+                            <a href="#"> <img src="image/images/IMG_6508.JPG" class="img-responsive image"></a>
                             <div class="overlay">
-                                <div class="text">about image</div>
+                                <div class="text">Security</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/images/IMG_6511.JPG" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">Winner of TechFest</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/images/IMG_6521.JPG" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">Judge committee</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                        <div class="image_container">
+                            <a href="#"> <img src="image/images/IMG_5986.JPG" class="img-responsive image"></a>
+                            <div class="overlay">
+                                <div class="text">Social Committee</div>
                             </div>
                         </div>
                     </div>
@@ -325,12 +388,11 @@
              </div>
              </div>
          </div>
-
    <!-- End image gallery -->
 
     <!-- Contact -->
 
-    <div class="row clearfix">
+    <div class="row  clearfix" id="section5">
         <div class="contact">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="gallery-title">Contact</h1>
@@ -360,7 +422,7 @@
     <!-- End Contact -->
 
 </div>
-
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

@@ -1,3 +1,5 @@
+
+
 let effects = ['fadeInDown', 'fadeInLeft', 'fadeInRight', 'fadeInUp'];
 var waypoint = new Waypoint({
     element: document.getElementById('imageGallery'),
@@ -16,7 +18,7 @@ var waypoint = new Waypoint({
 
 var waypoint = new Waypoint({
 
-    element:document.getElementById('eventID'),
+    element:document.getElementById('aboutID'),
     handler: function(direction) {
         var className = "";
         console.log(direction);
@@ -40,23 +42,30 @@ var waypoint = new Waypoint({
 
 
 var waypoint = new Waypoint({
-    element:document.getElementById('LectureID'),
+    element:document.getElementById('LecturesID'),
     handler: function(direction) {
-        var className = "";
+        var classNameL = "";
+        var classNameR = "";
         console.log(direction);
         if(direction.toString() === 'down'){
-            $('.LecturesC').addClass('fadeInRight');
-            className = 'fadeInRight';
+            $('.LecturesCL').addClass('fadeInLeft');
+            $('.LecturesCR').addClass('fadeInRight');
+            classNameL = 'fadeInLeft';
+            classNameR = 'fadeInRight';
         }
 
+
         else if(direction.toString() === 'up'){
-            $('.LecturesC').addClass('fadeInLeft');
-            className = 'fadeInRight';
+            $('.LecturesCL').addClass('fadeInRight');
+            $('.LecturesCR').addClass('fadeInLeft');
+            classNameL = 'fadeInRight';
+            classNameR = 'fadeInLeft';
         }
 
         console.log(className);
         setTimeout(()=> {
-            $('.LecturesC').removeClass(className);
+            $('.LecturesCL').removeClass(classNameL);
+            $('.LecturesCR').removeClass(classNameR);
         },2000);
     }
 });

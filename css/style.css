@@ -10,7 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     padding: 0;
-    margin: 0;
+    background-color: #f5ffd3;
 }
 
 
@@ -58,7 +58,10 @@ body{
 .main-title .thin {
     font-weight: 400;
 }
+
+
 nav ul li a{
+
     color:#F6E2E2;
     transition-duration: 1s;
 }
@@ -84,13 +87,6 @@ nav ul li a{
 
 
 /* About content */
-
-div p{
-    margin-left : 50px;
-    margin-right: 50px;
-}
-
-/*End of about content*/
 
 
 
@@ -252,6 +248,8 @@ h1 { font-weight: 700; }
 
 .image {
     display: block;
+    width: 250px;
+    height:200px;
 }
 
 .overlay {
@@ -296,7 +294,47 @@ h1 { font-weight: 700; }
 }
 
 .form-fill{
-    margin-left:25px;
+    margin-right: 30px;
 }
 
 /*End of form*/
+
+/* Inner Page */
+
+.image-block{
+    display: flex;
+    justify-content: center;
+}
+
+.show-image img{
+    width:1000px;
+    height:300px;
+
+}
+
+.container .row:nth-child(1){
+   background-color: #ffd591;
+}
+
+.container .row:nth-child(2){
+    background-color: #9d9d9d;
+}
+
+
+.container .row:nth-child(3){
+    background-color: #31708f;
+}
+
+.container .row:nth-child(4){
+    background-color: #9d9d9d;
+}
+
+
+
+.container .row:nth-child(5){
+    background-color: #31708f;
+}
+
+.container .row:nth-child(6){
+    background-color: #9d9d9d;
+}
