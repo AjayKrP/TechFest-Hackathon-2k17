@@ -248,7 +248,7 @@ h1 { font-weight: 700; }
 
 .image {
     display: block;
-    width: 250px;
+    width:260px;
     height:200px;
 }
 
@@ -256,7 +256,7 @@ h1 { font-weight: 700; }
     position: absolute;
     bottom: 100%;
     left:  0;
-    right: 10%;
+    right: 0%;
     background-color: #008CBA;
     overflow: hidden;
     height:0;
@@ -337,4 +337,17 @@ h1 { font-weight: 700; }
 
 .container .row:nth-child(6){
     background-color: #9d9d9d;
+}
+
+
+.LecturesCL  h2{
+    color: #c9302c;
+}
+
+.LecturesCR  h2{
+    color: #c9302c;
+}
+
+.footer{
+    text-align: center;
 }
