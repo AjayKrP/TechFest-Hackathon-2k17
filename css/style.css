@@ -10,7 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     padding: 0;
-    background-color: #f5ffd3;
+    background-color: #050609;
 }
 
 
@@ -61,7 +61,7 @@ body{
 
 
 nav ul li a{
-
+    margin-right: 10px;
     color:#F6E2E2;
     transition-duration: 1s;
 }
@@ -312,42 +312,36 @@ h1 { font-weight: 700; }
 
 }
 
-.container .row:nth-child(1){
-   background-color: #ffd591;
+h2 h3 h4 p{
+    color: white;
 }
 
-.container .row:nth-child(2){
-    background-color: #9d9d9d;
-}
-
-
-.container .row:nth-child(3){
-    background-color: #31708f;
-}
-
-.container .row:nth-child(4){
-    background-color: #9d9d9d;
-}
-
-
-
-.container .row:nth-child(5){
-    background-color: #31708f;
-}
-
-.container .row:nth-child(6){
-    background-color: #9d9d9d;
-}
-
-
-.LecturesCL  h2{
-    color: #c9302c;
-}
-
-.LecturesCR  h2{
-    color: #c9302c;
-}
 
 .footer{
     text-align: center;
 }
+
+
+@media only screen and (min-width: 760px){
+    .title {
+        font-family: 'Open Sans', sans-serif;
+        color: #222222;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 70px;
+        font-weight: 800;
+        letter-spacing: -3px;
+        line-height: 1;
+        text-shadow: #3DA4AB 3px 2px 0;
+    }
+    .title:after {
+        background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+        background-size: 2px 2px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -5;
+        display: block;
+        text-shadow: none;
+    }
+}
+
