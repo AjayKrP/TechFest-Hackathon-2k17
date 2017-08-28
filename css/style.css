@@ -345,3 +345,10 @@ h2 h3 h4 p{
     }
 }
 
+.aboutL h3 b{
+    color: white;
+}
+
+.aboutL p{
+    color: #bce8f1;
+}
