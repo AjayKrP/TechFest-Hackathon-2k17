@@ -1,0 +1,31 @@
+<style>
+    a, button {
+        width:300px;
+        height:100px;
+    }
+    
+    span{
+        padding-top: 50px;
+    }
+</style>
+<div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+         <button onclick="redirect1('/admin/gallery');" value="EDIT" class="btn btn-success btn-lg"><span>Gallery</span></button>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+         <button onclick="redirect1('/event/add-events');" value="EDIT" class="btn btn-success btn-lg"><span>Events</span></button>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+         <button onclick="redirect1('/admin/account');" value="EDIT" class="btn btn-success btn-lg"><span>Account</span></button>
+    </div>
+</div>
+
+<script>
+
+    function redirect1(url){
+        var parts = document.location.href.split('/');
+        console.log(url);
+        document.location.href = parts[0] + '//' + parts[2] +  url;
+    } 
+     
+</script>

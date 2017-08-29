@@ -1,0 +1,23 @@
+{{#if events}}
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <ul class="list-group">
+                {{#each events}}
+                    <li class="list-group-item">
+                        <strong>{{ this.title }}</strong>
+                        <a href="/admin/delete/{{this._id}}" class="btn btn-xs pull-right danger" role="button"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+{{ else }}
+
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <h2>No Events are found </h2>
+        </div>
+    </div>
+
+{{/if}}
